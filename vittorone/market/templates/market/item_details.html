@@ -1,0 +1,10 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+  <div class="item-details">
+    <h1>{{ item.name }}</h1>
+    <img src="{{ item.image.url }}" height="200px" width="200px">
+    <p>{{ item.description }}</p>
+    <h3>{{ item.price }}€</h3>
+  </div>
+{% endblock %}
