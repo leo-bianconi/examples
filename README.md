@@ -1,9 +1,9 @@
-#Examples
+# Examples
 a lot of unorganised stuff
 
-##blogxd
+## blogxd
 just a test django app, contains blogxd, articles
 
-##vittorone
+## vittorone
 just a copy of a tutorial about django's basics
 contains vittorone, market, accounts
