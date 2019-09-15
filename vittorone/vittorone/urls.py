@@ -6,8 +6,8 @@ from django.conf import settings
 
 urlpatterns = [
     path('', include('market.urls')),
+    path('accounts/', include('accounts.urls')),
     path('admin/', admin.site.urls),
-    path('accounts/' include('accounts.urls'))
 ]
 
 urlpatterns += staticfiles_urlpatterns()                                                             # only for development

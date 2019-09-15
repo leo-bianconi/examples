@@ -1,5 +1,9 @@
 {% extends 'layout.html' %}
 
 {% block content %}
-  <h2>This is the signup page!! kill me</h2>
+  <form class="signup-form" action="/accounts/signup/" method='post'>
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Signup">
+  </form>
 {% endblock %}
