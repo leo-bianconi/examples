@@ -9,7 +9,16 @@
   </head>
   <body>
     <a href="{% url 'market:index'%}"><img src="{% static 'logo.jpg' %}" alt="GiovaneUomo" width="100px" height="20px"></a>
-
+    <nav>
+      <ul>
+        <li>
+          <form class="logout-link" action="{% url 'accounts:logout' %}" method="post">
+            {% csrf_token %}
+            <button type="submit">Log out</button>
+          </form>
+        </li>
+      </ul>
+    </nav>
     {% block content %}
     {% endblock %}
 

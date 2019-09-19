@@ -5,5 +5,6 @@ app_name = 'market'
 
 urlpatterns = [
     path('', views.market_index, name='index'),
-    path('item/<slug:slug>', views.item_details, name='item_details')
+    path('item/<slug:slug>/', views.item_details, name='item_details'),
+    path('sell/', views.sell_view, name='sell')
 ]
